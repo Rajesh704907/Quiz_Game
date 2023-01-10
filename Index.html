@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li onclick="back()">Home</li>
+            <li  onclick="back()">Quiz</li>
+            <li>Help</li>
+            <li onclick="login()">Login</li>
+        </ul>
+    </nav>
+    <div class="boxes">
+        <h3 id="h3">Quiz Game </h3>
+
+        <div class="main-box">
+
+            <h1>HTML Quiz </h1>
+            <button onclick="html()">start now</button>
+        </div>
+        <div class="main-box">
+            <h1>CSS Quiz </h1>
+            <button onclick="css()"> start now</button>
+        </div>
+        <div class="main-box">
+            <h1>Javascript Quiz </h1>
+            <button onclick="js()">start now</button>
+        </div>
+        <div class="main-box">
+            <h1>Java Quiz</h1>
+            <button onclick="java()">start now</button>
+        </div>
+    </div>
+    <div><input type="hidden" class="vall" id="vall" value="0">
+        <div class="main-div">
+            <div class="inner-div">
+                <h2 class="question">Question comes here</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="ans1" class="answer">
+                        <label for="ans1" id="option1">Answer Option</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="ans2" class="answer">
+                        <label for="ans2" id="option2">Answer Option</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="ans3" class="answer">
+                        <label for="ans3" id="option3">Answer Option</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="ans4" class="answer">
+                        <label for="ans4" id="option4">Answer Option</label>
+                    </li>
+                </ul>
+                <p id="error"> Please Select Any One Option</p>
+                <button id="submit">submit</button>
+                <div id="showScore" class="scoreArea"> </div>
+
+            </div>
+        </div>
+        <div class="login ">
+          <form action="">
+
+              <div>
+                  <label> Email Id &nbsp;&nbsp;&nbsp;:</label>
+                  <input type="email" placeholder=" Email Id" required> <br><br>
+                </div>
+                <div>
+                    <label> Password :</label>
+                    <input type="password" placeholder=" Password" required> <br><br>
+                </div>
+                <button>Login</button>
+                <button>SignUp</button>
+            </div>
+        </form> 
+        <script src="Script.js"></script>
+    </div>
+</body>
+
+</html>
